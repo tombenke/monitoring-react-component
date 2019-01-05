@@ -2,13 +2,14 @@ monitoring-react-component
 ==========================
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+[![npm version][npm-badge]][npm-url]
 [![Build Status][travis-badge]][travis-url]
 [![Coveralls][BadgeCoveralls]][Coveralls]
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 This repository holds the monitoring react components.
-See the [docs](https://tombenke.github.io/monitoring-react-component/) for further information.
-
+See the [storybook](https://tombenke.github.io/monitoring-react-component/storybook/) to see the components,
+and read the [docs](https://tombenke.github.io/monitoring-react-component/) for further information.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -52,15 +53,21 @@ See [storybook.org](https://storybook.js.org) for more information.
 Analyze and debug JavaScript (or Sass or LESS) code bloat through source maps.<br>
 See [source-map-explorer](source-map-explorer) for more information.
 
+### `npm run build-dist`
+
+Builds the module for production to the `dist` folder.<br>
+It prepares the module for `npm publish`.
+Only the `dist/` folder, and the `README.md` will be published.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+__Note: This feature is kept only for the sake of compatibility.
+The app itself holds a minimal implementation, and made for testing purposes only.__
 
 ### `npm run eject`
 
@@ -72,7 +79,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Create a new react-app project
+## Create a new react-component project
 
 Use the [kickoff](https://www.npmjs.com/package/kickoff) utility to create a new react frontend project based on this repository.
 
@@ -85,15 +92,15 @@ Use the [kickoff](https://www.npmjs.com/package/kickoff) utility to create a new
 2. Create the new project:
 ```bash
     kickoff 
-    kickoff -s tombenke/monitoring-react-component -d new-react-app-project
-    cd new-react-app-project
+    kickoff -s tombenke/monitoring-react-component -d new-react-component
+    cd new-react-component
     ./.kickoff.sh
 ```
 
-3. Install modules, and build the app:
+3. Install modules, and start it:
 ```bash
     npm install
-    npm run build
+    npm run start
 ```
 
 See [kickoff](https://www.npmjs.com/package/kickoff) for further information.
@@ -128,6 +135,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+[npm-url]: https://badge.fury.io/js/monitoring-react-component
 [npm-badge]: https://badge.fury.io/js/monitoring-react-component.svg
 [travis-badge]: https://api.travis-ci.org/tombenke/monitoring-react-component.svg
 [travis-url]: https://travis-ci.org/tombenke/monitoring-react-component
