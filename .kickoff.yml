@@ -1,6 +1,6 @@
 # This is a configuration file for the kickoff utility
 description: |
-    This is a project archetype for react UI fronteds
+    This is a project archetype for react UI components
     New projects can be generated from this archetype by the
     [kickoff](https://github.com/tombenke/kickoff) utility.
 
@@ -31,13 +31,13 @@ questions:
         type: input
         name: package_name
         message: The name of the application
-        default: new-react-app
+        default: new-react-component
 
     -
         type: input
         name: package_description
         message: The short description of the application
-        default: This is a react UI application
+        default: This is a react UI component
 
     -
         type: input

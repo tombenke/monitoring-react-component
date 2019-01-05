@@ -1,6 +1,6 @@
 #!/bin/bash
 testBaseDir=${HOME}/tmp
-destDir=${testBaseDir}/test-react-app
+destDir=${testBaseDir}/test-react-component
 cwd=`pwd`
 echo Executing kickoff -a .kickoff.test.yml -f . -d destDir
 rm $destDir -rf

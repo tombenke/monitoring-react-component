@@ -1,7 +1,7 @@
 # Configuration file to generate test-ui via kickoff
-# kickoff -a test-dashboard.yml -f ~/topics/react-redux-ui-archetype/ -d test-test-dashboard
-package_name: test-react-app
-package_description: A react frontend application
+# kickoff -a test-react-component.yml -f ~/topics/monitoring-react-component/ -d test-react-component
+package_name: test-react-component
+package_description: A react component
 author_full_name: Test Author
 author_email: testauthor@gmail.com
 author_github_account: testauthor
