@@ -94,7 +94,7 @@ Use the [kickoff](https://www.npmjs.com/package/kickoff) utility to create a new
     kickoff 
     kickoff -s tombenke/monitoring-react-component -d new-react-component
     cd new-react-component
-    sh ./.kickoff.sh
+    sh .kickoff.sh
 ```
 
 3. Install modules, and start it:
